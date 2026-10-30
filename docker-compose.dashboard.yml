@@ -1,0 +1,16 @@
+services:
+  dashboard:
+    build:
+      context: ./stage5_app
+      dockerfile: Dockerfile.dashboard
+    image: nyc-taxi-dashboard:stage5
+    container_name: taxi-stage5-dashboard
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./data:/data:ro
+    environment:
+      - TZ=America/New_York
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+    mem_limit: 1536m
+    restart: unless-stopped

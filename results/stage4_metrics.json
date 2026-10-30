@@ -1,0 +1,70 @@
+{
+  "status": "SUCCESS",
+  "train_rows": 82080,
+  "validation_rows": 22320,
+  "test_rows": 21600,
+  "best_model_by_validation_mae": "rf",
+  "training_seconds": {
+    "rf": 39.36,
+    "gbt": 45.34
+  },
+  "validation": {
+    "rows": 22320,
+    "actual_total": 2840900,
+    "models": {
+      "baseline": {
+        "MAE": 24.792,
+        "RMSE": 40.424,
+        "WAPE_percent": 19.478
+      },
+      "rf": {
+        "MAE": 19.49,
+        "RMSE": 30.285,
+        "WAPE_percent": 15.313
+      },
+      "gbt": {
+        "MAE": 20.573,
+        "RMSE": 31.257,
+        "WAPE_percent": 16.164
+      }
+    }
+  },
+  "test": {
+    "rows": 21600,
+    "actual_total": 2671269,
+    "models": {
+      "baseline": {
+        "MAE": 24.848,
+        "RMSE": 40.601,
+        "WAPE_percent": 20.092
+      },
+      "rf": {
+        "MAE": 19.587,
+        "RMSE": 30.759,
+        "WAPE_percent": 15.838
+      },
+      "gbt": {
+        "MAE": 20.932,
+        "RMSE": 32.06,
+        "WAPE_percent": 16.926
+      }
+    }
+  },
+  "example_zone_id": 161,
+  "models": [
+    "baseline",
+    "rf",
+    "gbt"
+  ],
+  "interpretation": "June test uses only older observed hours as lag features, one-hour-ahead setting; model chosen on May only",
+  "parameters": {
+    "rf": {
+      "numTrees": 20,
+      "maxDepth": 6
+    },
+    "gbt": {
+      "maxIter": 12,
+      "maxDepth": 4
+    }
+  }
+}

@@ -1,0 +1,33 @@
+# Large datasets and generated results
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment and credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Archives and backups
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.bak.py
+*.bak.yml
+docker-compose.before-ml.yml
+
+# Logs and temporary files
+*.log
+*.tmp
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/

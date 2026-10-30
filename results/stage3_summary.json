@@ -1,0 +1,24 @@
+{
+  "month": "2024-01",
+  "kpi": {
+    "trip_count": 2831806,
+    "pickup_zone_count": 254,
+    "avg_distance_miles": 3.24,
+    "avg_duration_min": 14.92,
+    "avg_order_amount_usd": 26.94,
+    "total_order_amount_usd": 76279439.67
+  },
+  "output_tables": [
+    "daily_trips",
+    "hourly_trips",
+    "weekday_trips",
+    "top_pickup_zones",
+    "top_routes",
+    "distance_distribution",
+    "amount_distribution",
+    "zone_hourly_trips",
+    "zone_date_hourly_trips"
+  ],
+  "checked_total": 2831806,
+  "status": "SUCCESS"
+}

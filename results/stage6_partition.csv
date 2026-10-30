@@ -1,0 +1,4 @@
+﻿experiment,months,partitions,rows,input_mib,repeats,median_seconds,min_seconds,max_seconds,median_rows_per_second
+partition,1,2,2831806,47.65,3,21.36,15.949,75.91,132575.2
+partition,1,4,2831806,47.65,3,13.696,13.631,14.245,206761.5
+partition,1,8,2831806,47.65,3,12.552,11.366,13.069,225606.0

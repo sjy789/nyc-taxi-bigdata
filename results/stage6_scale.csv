@@ -1,0 +1,4 @@
+﻿experiment,months,partitions,rows,input_mib,repeats,median_seconds,min_seconds,max_seconds,median_rows_per_second
+scale,1,4,2831806,47.65,3,21.334,16.733,79.986,132736.8
+scale,3,4,9109073,152.96,3,33.328,31.18,43.207,273315.9
+scale,6,4,19461117,326.1,3,65.869,64.19,72.523,295451.8
